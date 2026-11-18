@@ -1,6 +1,6 @@
 UK VAT COMPLIANCE CHECKLIST
-VAT Calculator UK
-https://example.com
+VAT in UK
+https://vatinuk.co.uk
 Last reviewed 10 November 2026
 
 This checklist is a practical prompt sheet, not tax or legal advice. Check GOV.UK for the rules that apply to your business.
@@ -38,7 +38,7 @@ INPUT TAX
 [ ] Claim input tax within four years of the return period it relates to.
 
 TOOLS AND GUIDES
-VAT calculator: https://example.com
-VAT guides: https://example.com/guides.html
-VAT rate card: https://example.com/assets/uk-vat-rate-card.csv
-VAT rate history: https://example.com/assets/uk-vat-rate-history.csv
+VAT calculator: https://vatinuk.co.uk
+VAT guides: https://vatinuk.co.uk/guides.html
+VAT rate card: https://vatinuk.co.uk/assets/uk-vat-rate-card.csv
+VAT rate history: https://vatinuk.co.uk/assets/uk-vat-rate-history.csv

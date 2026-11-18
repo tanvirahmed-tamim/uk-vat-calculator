@@ -1,8 +1,8 @@
-# VAT Calculator UK
+# VAT in UK
 
-A static UK VAT calculator and reference site. Add or remove VAT at 20%, 5%, 0% or a custom
-rate, check the £90,000 registration threshold, process a list of invoice lines, estimate the
-Flat Rate Scheme, and read sourced guides on UK VAT.
+VAT in UK is a static UK VAT calculator and reference site at `https://vatinuk.co.uk`. Add or
+remove VAT at 20%, 5%, 0% or a custom rate, check the £90,000 registration threshold, process a
+list of invoice lines, estimate the Flat Rate Scheme, and read sourced guides on UK VAT.
 
 The site is plain HTML, one compiled CSS file and vanilla JavaScript. Every calculation runs in
 the browser: there is no server, no account, no database of user figures, no analytics and no
@@ -57,7 +57,7 @@ local server gives more realistic behaviour for redirects and headers.
 - Every content page lists its sources at the bottom and repeats them as `citation` data in the
   page's JSON-LD.
 - There is no named individual author or reviewer. Content is published under the
-  "VAT Calculator UK team" name. No page claims a review that did not happen.
+  "VAT in UK team" name. No page claims a review that did not happen.
 - Corrections that change a figure or a rule are recorded in `/corrections.html`.
 - The site sets no cookies and loads no third-party scripts. If advertising, affiliate links or
   analytics are added, the privacy and cookies policies and the consent approach must change in
@@ -74,7 +74,7 @@ checklist and the post-launch checks.
 ## Licence
 
 The source code (HTML structure, CSS and JavaScript) is released under the MIT licence in
-[`LICENSE`](LICENSE). The editorial content, data files and branding are © VAT Calculator UK and
+[`LICENSE`](LICENSE). The editorial content, data files and branding are © VAT in UK and
 are not covered by the MIT licence. See the licence file for the split.
 
 ## Disclaimer

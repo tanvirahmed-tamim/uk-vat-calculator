@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # No tracking, no blocked paths.
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://vatinuk.co.uk/sitemap.xml

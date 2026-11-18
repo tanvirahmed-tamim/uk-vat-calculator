@@ -26,16 +26,27 @@ Every push to `main` publishes the repository root. Pull requests get preview UR
   the assets; if a new third-party script is ever added, the CSP must be updated deliberately.
 - `404.html` — served automatically for unknown paths. It carries `noindex,follow`.
 
+## Domain and DNS
+
+The canonical host is the apex domain, `https://vatinuk.co.uk`. Every canonical, Open Graph,
+Twitter, JSON-LD, `robots.txt` and `sitemap.xml` reference already uses it; there is no
+`example.com` placeholder left in the build.
+
+- Add `vatinuk.co.uk` as the custom domain in Cloudflare Pages.
+- Add `www.vatinuk.co.uk` as a second custom domain, then create a 301 redirect from
+  `www.vatinuk.co.uk/*` to `https://vatinuk.co.uk/$1` with a Cloudflare Redirect Rule or Bulk
+  Redirect. Do not let both hosts serve the site.
+- Set SSL/TLS mode to **Full (strict)** and enable **Always Use HTTPS**.
+- Add HSTS only after the www redirect and HTTPS have been confirmed in production.
+
 ## Before the first production publish
 
-1. Choose the domain.
-2. Replace the `https://example.com` placeholder in every canonical, Open Graph, Twitter,
-   JSON-LD, `robots.txt` and `sitemap.xml` reference. Use a find-and-replace over the built HTML,
-   then regenerate the sitemap so the loc values match. Do not publish with the placeholder.
-3. Add the custom domain in Cloudflare Pages, then point DNS at the Pages project.
-4. Confirm `https://<domain>/` serves the homepage over HTTPS with no redirect loop.
+1. Push the repository to GitHub and connect Cloudflare Pages with the settings above.
+2. Add the apex domain and the `www` host, and configure the www-to-apex 301.
+3. Confirm `https://vatinuk.co.uk/` serves the homepage over HTTPS with no redirect loop.
+4. Confirm `https://www.vatinuk.co.uk/` returns a 301 to the apex.
 5. Check `/guides/vat-rates-explained.html` returns a 301 to `/guides/vat-rates.html`.
-6. Confirm `/sitemap.xml` contains 60 URLs and every `<loc>` uses the live domain.
+6. Confirm `/sitemap.xml` contains 60 URLs and every `<loc>` uses `https://vatinuk.co.uk`.
 
 ## Post-launch checks
 
