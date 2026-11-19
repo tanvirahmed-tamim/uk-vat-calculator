@@ -86,27 +86,17 @@
       "publisher": {
         "@id": "https://vatinuk.co.uk/#organisation"
       },
-      "dateModified": "2026-11-10",
+      "dateModified": "2026-11-19",
       "citation": [
-        {
-          "@type": "Legislation",
-          "name": "legislation.gov.uk: Value Added Tax Act 1994, section 4",
-          "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/4"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "HMRC: VAT guide (VAT Notice 700)",
-          "url": "https://www.gov.uk/guidance/vat-guide-notice-700"
-        },
         {
           "@type": "CreativeWork",
           "name": "GOV.UK: VAT rates",
           "url": "https://www.gov.uk/vat-rates"
         },
         {
-          "@type": "Legislation",
-          "name": "legislation.gov.uk: Value Added Tax Act 1994, Schedule 1 (registration)",
-          "url": "https://www.legislation.gov.uk/ukpga/1994/23/schedule/1"
+          "@type": "CreativeWork",
+          "name": "HMRC: VAT guide (VAT Notice 700)",
+          "url": "https://www.gov.uk/guidance/vat-guide-notice-700"
         }
       ]
     },
@@ -192,7 +182,7 @@
         <div class="max-w-3xl">
           <p class="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">Standards</p>
           <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Editorial policy</h1>
-          <p class="mt-3 text-sm font-medium text-slate-500">Last updated 15 November 2026</p>
+          <p class="mt-3 text-sm font-medium text-slate-500">Last reviewed 19 November 2026</p>
           <p class="mt-5 text-lg leading-relaxed text-slate-600">This page explains who is accountable for the content, which sources are allowed, how figures are checked and what happens when something is wrong.</p>
         </div>
 
@@ -251,13 +241,18 @@
               <li>The claim is identified: a rate, threshold, deadline, definition or procedure.</li>
               <li>The current GOV.UK page or HMRC notice is opened and read at the point where the claim is made.</li>
               <li>Where a rule has a legal basis, the section of the Act or statutory instrument is checked as well.</li>
-              <li>The source link is recorded in our source registry and resolved at build time. A dead link fails the build.</li>
+              <li>The source link is recorded in our source registry. A citation that does not match the visible source list on the page fails the build.</li>
               <li>A second pass checks that the visible sources on the page and the structured citation data match.</li>
             </ol>
             <p>
-              Automated checks catch broken links, mismatched citations, invalid structured data,
-              duplicate IDs and encoding faults. They do not decide whether a sentence is true; that
-              remains an editorial judgement.
+               Automated checks catch broken internal links, mismatched citations, invalid structured data,
+               duplicate IDs and encoding faults. They do not decide whether a sentence is true; that
+               remains an editorial judgement.
+            </p>
+            <p>
+              A fact is only treated as checked when the relevant passage has been read in this pass.
+              Reusing wording from another page is not verification, because the same sentence can be
+              right in one context and wrong in another.
             </p>
 
             <h2 id="review">Review dates</h2>
@@ -266,6 +261,11 @@
               been rechecked, not when a page is reformatted or a sentence is rewritten for style.
               Pages are reviewed on a scheduled cycle and immediately after any Budget, rate change,
               threshold change or new HMRC notice that affects them.
+            </p>
+            <p>
+              The visible date and the structured data share one value at build time, so they cannot
+              drift apart. If a page's facts were not reopened, its date stays where it was, even if
+              other pages in the same collection were rechecked.
             </p>
             <p>
               A stale date is treated as a defect, not as a neutral detail. If a page has not been
@@ -278,6 +278,11 @@
               link checks and arithmetic tests. Some drafting is assisted by software. Every published
               figure and every statement about a rule is checked by a person against a primary source
               before it goes live.
+            </p>
+            <p>
+              Worked examples are arithmetic, not case studies. When a page shows a bill, a margin or
+              a threshold timeline, the numbers are chosen to show the rule and are calculated from
+              it. We do not present them as real clients, real disputes or anonymised cases.
             </p>
             <p>
               We do not publish unattended machine-written explanations of tax rules, invented case
@@ -338,23 +343,15 @@
           </p>
           <ul class="mt-4 space-y-2.5 text-sm leading-relaxed">
             <li>
-              <a href="https://www.legislation.gov.uk/ukpga/1994/23/section/4" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">legislation.gov.uk: Value Added Tax Act 1994, section 4</a>
-              <span class="text-slate-500">(Legislation)</span>
+              <a href="https://www.gov.uk/vat-rates" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">GOV.UK: VAT rates</a>
+              <span class="text-slate-500">(Guidance)</span>
             </li>
             <li>
               <a href="https://www.gov.uk/guidance/vat-guide-notice-700" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">HMRC: VAT guide (VAT Notice 700)</a>
               <span class="text-slate-500">(HMRC notice)</span>
             </li>
-            <li>
-              <a href="https://www.gov.uk/vat-rates" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">GOV.UK: VAT rates</a>
-              <span class="text-slate-500">(Guidance)</span>
-            </li>
-            <li>
-              <a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/1" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">legislation.gov.uk: Value Added Tax Act 1994, Schedule 1 (registration)</a>
-              <span class="text-slate-500">(Legislation)</span>
-            </li>
           </ul>
-          <p class="mt-4 text-xs text-slate-500">Sources checked 13 November 2026. Not tax or legal advice.</p>
+          <p class="mt-4 text-xs text-slate-500">Sources checked 19 November 2026. Not tax or legal advice.</p>
         </section>
       </section>
     </main>
@@ -368,7 +365,6 @@
               Free UK VAT calculators and plain-English guides. Every calculation runs in your
               browser, with no accounts and no tracking.
             </p>
-            <p class="mt-4 text-xs text-slate-400">Last reviewed 10 November 2026</p>
           </div>
           <div>
             <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Site</h2>

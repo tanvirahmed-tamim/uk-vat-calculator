@@ -1,7 +1,7 @@
 UK VAT COMPLIANCE CHECKLIST
 VAT in UK
 https://vatinuk.co.uk
-Last reviewed 10 November 2026
+Checked against GOV.UK and HMRC guidance, November 2026
 
 This checklist is a practical prompt sheet, not tax or legal advice. Check GOV.UK for the rules that apply to your business.
 
@@ -11,7 +11,7 @@ REGISTRATION
 [ ] Tell HMRC within 30 days of the end of the month in which you crossed the threshold.
 [ ] Record your VAT registration date and VAT number.
 [ ] Consider voluntary registration if you buy a lot from VAT-registered suppliers.
-[ ] Check the GBP 88,000 deregistration threshold before leaving the scheme.
+[ ] Check the GBP 88,000 deregistration threshold: you can ask to cancel if you expect taxable turnover in the next 12 months to stay below it.
 
 INVOICES
 [ ] Show your business name, address and VAT number.
@@ -27,6 +27,7 @@ RECORDS AND FILING
 [ ] Keep digital records and file through Making Tax Digital software.
 [ ] Reconcile sales and purchases to the boxes on the VAT return.
 [ ] Check box 1 output tax, box 4 input tax and box 5 the difference.
+[ ] Include standard, reduced, zero-rated and exempt sales in box 6; there is no separate exempt box.
 [ ] File and pay by one calendar month and seven days after the end of the period.
 [ ] Keep VAT records for six years.
 

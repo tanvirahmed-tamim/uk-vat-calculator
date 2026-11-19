@@ -28,7 +28,7 @@
     <meta name="twitter:description" content="Remove VAT correctly by dividing by 1.20, not subtracting 20%. Includes the VAT fraction, worked examples and a quick reference table." />
     <meta name="twitter:image" content="https://vatinuk.co.uk/assets/og-image.png" />
     <meta property="article:published_time" content="2026-11-10" />
-        <meta property="article:modified_time" content="2026-11-10" />
+        <meta property="article:modified_time" content="2026-11-19" />
         <meta property="article:section" content="Calculation" />
 
 
@@ -99,30 +99,10 @@
       "publisher": {
         "@id": "https://vatinuk.co.uk/#organisation"
       },
-      "dateModified": "2026-11-10",
+      "dateModified": "2026-11-19",
       "mainEntity": {
         "@id": "https://vatinuk.co.uk/guides/how-to-remove-vat.html#article"
       },
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Standard rate divisor",
-          "value": "1.20",
-          "description": "20%"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Reduced rate divisor",
-          "value": "1.05",
-          "description": "5%"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Standard VAT fraction",
-          "value": "1/6",
-          "description": "of gross"
-        }
-      ],
       "citation": [
         {
           "@type": "CreativeWork",
@@ -130,14 +110,14 @@
           "url": "https://www.gov.uk/guidance/vat-guide-notice-700"
         },
         {
+          "@type": "Legislation",
+          "name": "legislation.gov.uk: Value Added Tax Act 1994, section 2 (rate of VAT)",
+          "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/2"
+        },
+        {
           "@type": "CreativeWork",
           "name": "GOV.UK: VAT rates",
           "url": "https://www.gov.uk/vat-rates"
-        },
-        {
-          "@type": "Legislation",
-          "name": "legislation.gov.uk: Value Added Tax Act 1994, section 4",
-          "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/4"
         }
       ]
     },
@@ -182,7 +162,7 @@
         "@id": "https://vatinuk.co.uk/guides/how-to-remove-vat.html#webpage"
       },
       "datePublished": "2026-11-10",
-      "dateModified": "2026-11-10",
+      "dateModified": "2026-11-19",
       "inLanguage": "en-GB",
       "author": {
         "@id": "https://vatinuk.co.uk/#team"
@@ -221,26 +201,6 @@
           "name": "Reclaiming VAT on expenses"
         }
       ],
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Standard rate divisor",
-          "value": "1.20",
-          "description": "20%"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Reduced rate divisor",
-          "value": "1.05",
-          "description": "5%"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Standard VAT fraction",
-          "value": "1/6",
-          "description": "of gross"
-        }
-      ],
       "citation": [
         {
           "@type": "CreativeWork",
@@ -248,14 +208,14 @@
           "url": "https://www.gov.uk/guidance/vat-guide-notice-700"
         },
         {
+          "@type": "Legislation",
+          "name": "legislation.gov.uk: Value Added Tax Act 1994, section 2 (rate of VAT)",
+          "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/2"
+        },
+        {
           "@type": "CreativeWork",
           "name": "GOV.UK: VAT rates",
           "url": "https://www.gov.uk/vat-rates"
-        },
-        {
-          "@type": "Legislation",
-          "name": "legislation.gov.uk: Value Added Tax Act 1994, section 4",
-          "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/4"
         }
       ]
     },
@@ -290,49 +250,6 @@
             "@type": "Answer",
             "text": "No. A margin scheme invoice normally does not show VAT separately, and VAT is calculated on the dealer's margin rather than the full selling price. Use the margin scheme calculator instead."
           }
-        }
-      ]
-    },
-    {
-      "@type": "HowTo",
-      "@id": "https://vatinuk.co.uk/guides/how-to-remove-vat.html#howto",
-      "name": "How to remove VAT from a gross price",
-      "description": "Remove VAT by dividing the gross amount by 1 plus the rate, or by multiplying the gross by the VAT fraction.",
-      "isPartOf": {
-        "@id": "https://vatinuk.co.uk/guides/how-to-remove-vat.html#webpage"
-      },
-      "inLanguage": "en-GB",
-      "totalTime": "PT5M",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "position": 1,
-          "name": "Start from the gross amount",
-          "text": "Use the VAT-inclusive total on the receipt or invoice."
-        },
-        {
-          "@type": "HowToStep",
-          "position": 2,
-          "name": "Divide by 1 plus the rate",
-          "text": "At 20% divide by 1.20; at 5% divide by 1.05. The result is the net amount."
-        },
-        {
-          "@type": "HowToStep",
-          "position": 3,
-          "name": "Take the VAT as the difference",
-          "text": "Subtract the net from the gross, or multiply the gross by the VAT fraction: 1/6 at 20% and 1/21 at 5%."
-        },
-        {
-          "@type": "HowToStep",
-          "position": 4,
-          "name": "Round to the nearest penny",
-          "text": "Round the net and VAT so the two amounts add back to the original gross."
-        }
-      ],
-      "tool": [
-        {
-          "@type": "HowToTool",
-          "name": "VAT fraction calculator"
         }
       ]
     }
@@ -403,7 +320,7 @@
           <p class="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">Calculation</p>
           <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">How to Remove VAT From a Gross Price: Formula and Examples</h1>
           <p class="mt-3 text-sm font-medium text-slate-500">
-            By the VAT in UK team &middot; Last reviewed 10 November 2026 &middot; 5 min read
+            By the VAT in UK team &middot; Last reviewed 19 November 2026 &middot; 5 min read
           </p>
           <p class="mt-4 text-xs font-medium text-slate-500">
             Part of <a href="vat-calculation.html" class="rounded-md font-semibold text-blue-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT calculation</a>
@@ -435,7 +352,7 @@
             <p>To remove VAT from a gross amount:</p>
             <p class="formula">Net = Gross &divide; (1 + rate &divide; 100)</p>
             <p>
-              At 20% the divisor is 1.20; at 5% it is 1.05; at a custom 17.5% it is 1.175. The VAT
+              At 20% the divisor is 1.20; at 5% it is 1.05. A historical 17.5% rate uses 1.175. The VAT
               element is the gross minus the net.
             </p>
 
@@ -447,7 +364,7 @@
             <ul>
               <li>At 20%: 20 &divide; 120 = <strong>1/6</strong>. VAT on &pound;120 is &pound;20.</li>
               <li>At 5%: 5 &divide; 105 = <strong>1/21</strong>. VAT on &pound;105 is &pound;5.</li>
-              <li>At 17.5%: 17.5 &divide; 117.5 = <strong>7/47</strong>. VAT on &pound;117.50 is &pound;17.50.</li>
+              <li>At 17.5% (historical, pre-2011): 17.5 &divide; 117.5 = <strong>7/47</strong>. VAT on &pound;117.50 is &pound;17.50.</li>
             </ul>
             <p>
               The <a href="../calculators/vat-fraction.html">VAT fraction calculator</a> does this
@@ -497,20 +414,6 @@
               receipt with VAT, the <a href="../calculators/vat-on-expenses.html">expenses calculator</a>
               turns the gross into input tax.
             </p>
-            <h2 id="key-facts">Key facts</h2>
-            <div class="table-wrap">
-              <table>
-                <caption>How to Remove VAT From a Gross Price at a glance</caption>
-                <thead>
-                  <tr><th scope="col">Attribute</th><th scope="col">Value</th><th scope="col">Note</th></tr>
-                </thead>
-                <tbody>
-                  <tr><th scope="row">Standard rate divisor</th><td><strong>1.20</strong></td><td>20%</td></tr>
-                  <tr><th scope="row">Reduced rate divisor</th><td><strong>1.05</strong></td><td>5%</td></tr>
-                  <tr><th scope="row">Standard VAT fraction</th><td><strong>1/6</strong></td><td>of gross</td></tr>
-                </tbody>
-              </table>
-            </div>
             <h2 id="related-terms">Related terms</h2>
             <p>
 <a href="../glossary.html#vat-fraction">VAT fraction</a>, <a href="../glossary.html#gross-amount">Gross amount</a>, <a href="../glossary.html#net-amount">Net amount</a>.
@@ -527,7 +430,6 @@
                 <li><a href="#examples" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Worked examples</a></li>
                 <li><a href="#when" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">When to use it</a></li>
                 <li><a href="#caveats" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Caveats</a></li>
-                <li><a href="#key-facts" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Key facts</a></li>
                 <li><a href="#related-terms" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Related terms</a></li>
               </ul>
             </div>
@@ -581,15 +483,15 @@
               <span class="text-slate-500">(HMRC notice)</span>
             </li>
             <li>
+              <a href="https://www.legislation.gov.uk/ukpga/1994/23/section/2" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">legislation.gov.uk: Value Added Tax Act 1994, section 2 (rate of VAT)</a>
+              <span class="text-slate-500">(Legislation)</span>
+            </li>
+            <li>
               <a href="https://www.gov.uk/vat-rates" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">GOV.UK: VAT rates</a>
               <span class="text-slate-500">(Guidance)</span>
             </li>
-            <li>
-              <a href="https://www.legislation.gov.uk/ukpga/1994/23/section/4" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">legislation.gov.uk: Value Added Tax Act 1994, section 4</a>
-              <span class="text-slate-500">(Legislation)</span>
-            </li>
           </ul>
-          <p class="mt-4 text-xs text-slate-500">Sources checked 13 November 2026. Not tax or legal advice.</p>
+          <p class="mt-4 text-xs text-slate-500">Sources checked 19 November 2026. Not tax or legal advice.</p>
         </section>
 
 <div class="mt-12 border-t border-slate-200 pt-8">
@@ -621,7 +523,6 @@
               Free UK VAT calculators and plain-English guides. Every calculation runs in your
               browser, with no accounts and no tracking.
             </p>
-            <p class="mt-4 text-xs text-slate-400">Last reviewed 10 November 2026</p>
           </div>
           <div>
             <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Site</h2>

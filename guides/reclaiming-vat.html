@@ -28,7 +28,7 @@
     <meta name="twitter:description" content="How to reclaim VAT on business expenses, which costs are blocked, how to handle mixed business and private use, and the records HMRC expects." />
     <meta name="twitter:image" content="https://vatinuk.co.uk/assets/og-image.png" />
     <meta property="article:published_time" content="2026-11-10" />
-        <meta property="article:modified_time" content="2026-11-10" />
+        <meta property="article:modified_time" content="2026-11-19" />
 
 
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='72' font-size='58' font-family='Arial, sans-serif' font-weight='bold' text-anchor='middle' fill='white'%3E%C2%A3%3C/text%3E%3C/svg%3E" />
@@ -98,48 +98,11 @@
       "publisher": {
         "@id": "https://vatinuk.co.uk/#organisation"
       },
-      "dateModified": "2026-11-10",
+      "dateModified": "2026-11-19",
       "mainEntity": {
         "@id": "https://vatinuk.co.uk/guides/reclaiming-vat.html#itemlist"
       },
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Input tax",
-          "value": "VAT on purchases",
-          "description": "reclaimed against output tax"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Claim window",
-          "value": "4 years",
-          "description": "after the return period"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Record keeping",
-          "value": "6 years",
-          "description": "normally"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Blocked costs",
-          "value": "entertainment, cars",
-          "description": "and private use"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Mixed use",
-          "value": "business proportion",
-          "description": "only the business share"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Evidence",
-          "value": "VAT invoice",
-          "description": "or valid receipt"
-        }
-      ],
+      "additionalProperty": [],
       "citation": [
         {
           "@type": "Legislation",
@@ -195,6 +158,18 @@
           "position": 1,
           "name": "Reclaiming VAT on business expenses",
           "url": "https://vatinuk.co.uk/guides/reclaiming-vat-expenses.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "VAT on business entertainment",
+          "url": "https://vatinuk.co.uk/guides/vat-on-business-entertainment.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "VAT fuel scale charge",
+          "url": "https://vatinuk.co.uk/guides/vat-fuel-scale-charge.html"
         }
       ]
     },
@@ -209,7 +184,7 @@
         "@id": "https://vatinuk.co.uk/guides/reclaiming-vat.html#webpage"
       },
       "datePublished": "2026-11-10",
-      "dateModified": "2026-11-10",
+      "dateModified": "2026-11-19",
       "inLanguage": "en-GB",
       "author": {
         "@id": "https://vatinuk.co.uk/#team"
@@ -358,7 +333,7 @@
           <p class="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">Guide collection</p>
           <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Reclaiming VAT and input tax</h1>
           <p class="mt-3 text-sm font-medium text-slate-500">
-            Maintained by the VAT in UK team &middot; Last reviewed 10 November 2026 &middot; 8 min read
+            Maintained by the VAT in UK team &middot; Last reviewed 19 November 2026 &middot; 8 min read
           </p>
           <p class="mt-5 text-lg leading-relaxed text-slate-600">Reclaiming VAT, formally called input tax, is what balances the VAT a business pays against the VAT it charges. The rules are mostly about eligibility and evidence rather than arithmetic: is the cost for business use, is there a valid invoice, and does anything block the claim?</p>
 
@@ -374,11 +349,15 @@
             <p>
               Input tax is the VAT a VAT-registered business pays on goods and services it buys for the
               business. On each VAT return it is set against the output tax charged on sales, and the
-              difference is what you pay HMRC or reclaim. For a fully taxable business buying mostly
-              standard-rated items, the arithmetic is simple; the judgement is about eligibility.
+              difference is what you pay HMRC or reclaim.
+            </p>
+            <p>
+              For a business that makes only standard-rated sales, the arithmetic is mechanical. The
+              judgement is about eligibility, and most disputes with HMRC start there rather than with
+              the sums.
             </p>
 
-            <h2 id="eligible">The three tests for a claim</h2>
+            <h2 id="tests">The three tests for a claim</h2>
             <ol>
               <li>The cost is for business use, not private spending.</li>
               <li>You hold a valid VAT invoice or receipt that shows the VAT.</li>
@@ -388,6 +367,22 @@
               If all three are met, the input tax is normally recoverable in full. If only part of the
               cost is for business use, only that proportion of the VAT is recoverable.
             </p>
+
+            <h3>Can I reclaim it?</h3>
+            <div class="table-wrap">
+              <table>
+                <caption>Input tax decision path</caption>
+                <thead>
+                  <tr><th scope="col">Question</th><th scope="col">If yes</th><th scope="col">If no</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Is the cost for business use?</td><td>Go to the next question</td><td>No input tax to claim</td></tr>
+                  <tr><td>Do you hold a valid VAT invoice?</td><td>Go to the next question</td><td>Normally cannot reclaim yet</td></tr>
+                  <tr><td>Does the cost support taxable supplies?</td><td>Recover in full</td><td>Apportion, or block if wholly exempt</td></tr>
+                  <tr><td>Is it UK client entertaining or a car?</td><td>Blocked or restricted</td><td>Recover in full</td></tr>
+                </tbody>
+              </table>
+            </div>
 
             <h2 id="extracting">Extracting the VAT from a cost</h2>
             <p>
@@ -401,17 +396,34 @@
               the fraction and any business-use percentage in one step.
             </p>
 
-            <h2 id="blocked">Blocked and restricted costs</h2>
-            <ul>
-              <li>Business entertainment of UK clients.</li>
-              <li>Most cars available for private use.</li>
-              <li>Goods and services used only for exempt supplies.</li>
-              <li>Private spending that is not a business cost at all.</li>
-              <li>Business gifts above the &pound;50 threshold, which can create an output tax liability.</li>
-            </ul>
+            <h3>Worked example: a phone bill</h3>
             <p>
-              For cars, separate rules apply, and reclaiming fuel VAT usually requires a fuel scale
-              charge. Check the specific rules before you claim.
+              A monthly phone bill is &pound;120 including VAT, so the VAT is &pound;20. The contract is
+              60% for business use, based on itemised usage kept with the bill. The reclaimable input
+              tax is 60% of &pound;20, which is &pound;12. The remaining &pound;8 is private and cannot
+              be claimed.
+            </p>
+
+            <h2 id="blocked">Blocked and restricted costs</h2>
+            <div class="table-wrap">
+              <table>
+                <caption>Common costs and the usual VAT answer</caption>
+                <thead>
+                  <tr><th scope="col">Cost</th><th scope="col">Input tax</th><th scope="col">Notes</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Business entertainment of UK clients</td><td>Blocked</td><td>Includes hospitality and meals</td></tr>
+                  <tr><td>Staff entertainment</td><td>Usually recoverable</td><td>Not the same as client entertaining</td></tr>
+                  <tr><td>Most cars available for private use</td><td>Blocked</td><td>Only genuine exceptions, such as a taxi</td></tr>
+                  <tr><td>Fuel for a private-use car</td><td>Restricted</td><td>Usually a fuel scale charge instead</td></tr>
+                  <tr><td>Goods used only for exempt supplies</td><td>Blocked</td><td>Partial exemption may allow a proportion</td></tr>
+                  <tr><td>Business gifts over &pound;50 to the same person</td><td>Recoverable</td><td>But output tax may be due on the gift</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              The table is a summary, not a substitute for the specific notice. Entertainment and
+              motoring have their own rules, linked at the end of this page.
             </p>
 
             <h2 id="mixed">Mixed business and private use</h2>
@@ -421,43 +433,55 @@
               split is reasonable and supported by records. Over time, a series of small private claims
               can add up, so keep evidence for the apportionment you use.
             </p>
+            <p>
+              There is an alternative for some assets: claim all the VAT and account for output tax on
+              the private use through the capital goods scheme or an annual private-use charge. That is
+              more administration, not less tax, and only suits specific assets.
+            </p>
 
-            <h2 id="records">Records and deadlines</h2>
+            <h2 id="partial">Partial exemption</h2>
+            <p>
+              A business that makes both taxable and exempt sales cannot usually recover all of its
+              input tax. It has to attribute costs and apply the partial exemption method agreed with
+              HMRC. Many smaller businesses stay inside the de minimis limit and recover everything,
+              but the limit is tested over the year and is easy to exceed in a single quarter.
+            </p>
+            <p>
+              If any of your sales are exempt, read
+              <a href="vat-partial-exemption.html">partial exemption</a> before assuming a full claim.
+            </p>
+
+            <h2 id="records">Evidence and deadlines</h2>
             <p>
               Keep the VAT invoice or receipt, note the business purpose, and record how any
               apportionment was worked out. Input tax can normally be claimed up to four years after
-              the return period it relates to, and records must be kept for six years. Overdue or missed
-              claims can often still be recovered if the evidence exists.
+              the return period it relates to, and records must be kept for six years.
             </p>
+            <p>
+              A claim needs evidence. If the invoice is missing, ask the supplier for a copy rather than
+              reconstructing the VAT from a bank statement. A bank statement alone does not show the
+              VAT charged.
+            </p>
+
+            <h2 id="mistakes">Common mistakes</h2>
+            <ul>
+              <li><strong>Claiming gross as net.</strong> The VAT is the fraction of the gross, not the whole amount.</li>
+              <li><strong>Claiming client entertaining.</strong> It is blocked for UK clients even when the meeting was clearly for business.</li>
+              <li><strong>Ignoring private use.</strong> A mobile, broadband or home office bill needs an honest business percentage.</li>
+              <li><strong>Claiming before the invoice arrives.</strong> Wait until you hold valid evidence.</li>
+              <li><strong>Overlooking the claim window.</strong> Older input tax is not lost immediately, but the four-year limit does apply.</li>
+            </ul>
             <p>
               The <a href="reclaiming-vat-expenses.html">reclaiming VAT on expenses guide</a> covers
               eligibility, blocked items and records in more detail.
             </p>
 
-            <h2 id="key-facts">Key facts</h2>
-            <div class="table-wrap">
-              <table>
-                <caption>Reclaiming VAT and input tax at a glance</caption>
-                <thead>
-                  <tr><th scope="col">Attribute</th><th scope="col">Value</th><th scope="col">Note</th></tr>
-                </thead>
-                <tbody>
-                  <tr><th scope="row">Input tax</th><td><strong>VAT on purchases</strong></td><td>reclaimed against output tax</td></tr>
-                  <tr><th scope="row">Claim window</th><td><strong>4 years</strong></td><td>after the return period</td></tr>
-                  <tr><th scope="row">Record keeping</th><td><strong>6 years</strong></td><td>normally</td></tr>
-                  <tr><th scope="row">Blocked costs</th><td><strong>entertainment, cars</strong></td><td>and private use</td></tr>
-                  <tr><th scope="row">Mixed use</th><td><strong>business proportion</strong></td><td>only the business share</td></tr>
-                  <tr><th scope="row">Evidence</th><td><strong>VAT invoice</strong></td><td>or valid receipt</td></tr>
-                </tbody>
-              </table>
-            </div>
           </article>
 
           <aside class="min-w-0 space-y-4 lg:sticky lg:top-6 lg:self-start">
             <div class="rounded-xl border border-slate-200 bg-white p-5">
               <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">On this page</h2>
               <ul class="mt-3 space-y-2 text-sm">
-                <li><a href="#key-facts" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Key facts</a></li>
                 <li><a href="#in-this-cluster" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Guides in this cluster</a></li>
                 <li><a href="#tools" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Calculators and tools</a></li>
                 <li><a href="#guide-faq" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Questions</a></li>
@@ -482,6 +506,16 @@
             <a href="reclaiming-vat-expenses.html" class="group flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
               <span class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Reclaiming VAT on business expenses</span>
               <span class="mt-2 text-xs leading-relaxed text-slate-600">Eligibility, blocked categories, mixed use and the records HMRC expects.</span>
+              <span class="mt-3 text-xs font-semibold text-blue-600">Read guide <span aria-hidden="true">&rarr;</span></span>
+            </a>
+            <a href="vat-on-business-entertainment.html" class="group flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+              <span class="text-sm font-bold text-slate-900 group-hover:text-blue-700">VAT on business entertainment</span>
+              <span class="mt-2 text-xs leading-relaxed text-slate-600">Why UK client entertaining is blocked and staff entertaining usually is not.</span>
+              <span class="mt-3 text-xs font-semibold text-blue-600">Read guide <span aria-hidden="true">&rarr;</span></span>
+            </a>
+            <a href="vat-fuel-scale-charge.html" class="group flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+              <span class="text-sm font-bold text-slate-900 group-hover:text-blue-700">VAT fuel scale charge</span>
+              <span class="mt-2 text-xs leading-relaxed text-slate-600">The alternative to tracking fuel VAT when a car has private use.</span>
               <span class="mt-3 text-xs font-semibold text-blue-600">Read guide <span aria-hidden="true">&rarr;</span></span>
             </a>
           </div>
@@ -557,7 +591,7 @@
               <span class="text-slate-500">(HMRC notice)</span>
             </li>
           </ul>
-          <p class="mt-4 text-xs text-slate-500">Sources checked 13 November 2026. Not tax or legal advice.</p>
+          <p class="mt-4 text-xs text-slate-500">Sources checked 19 November 2026. Not tax or legal advice.</p>
         </section>
 
 <div class="mt-12 border-t border-slate-200 pt-8">
@@ -589,7 +623,6 @@
               Free UK VAT calculators and plain-English guides. Every calculation runs in your
               browser, with no accounts and no tracking.
             </p>
-            <p class="mt-4 text-xs text-slate-400">Last reviewed 10 November 2026</p>
           </div>
           <div>
             <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Site</h2>

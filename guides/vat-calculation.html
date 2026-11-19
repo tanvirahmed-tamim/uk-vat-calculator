@@ -141,14 +141,14 @@
           "url": "https://www.gov.uk/guidance/vat-guide-notice-700"
         },
         {
+          "@type": "Legislation",
+          "name": "legislation.gov.uk: Value Added Tax Act 1994, section 2 (rate of VAT)",
+          "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/2"
+        },
+        {
           "@type": "CreativeWork",
           "name": "GOV.UK: VAT rates",
           "url": "https://www.gov.uk/vat-rates"
-        },
-        {
-          "@type": "Legislation",
-          "name": "legislation.gov.uk: Value Added Tax Act 1994, section 4",
-          "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/4"
         }
       ]
     },
@@ -239,14 +239,14 @@
           "url": "https://www.gov.uk/guidance/vat-guide-notice-700"
         },
         {
+          "@type": "Legislation",
+          "name": "legislation.gov.uk: Value Added Tax Act 1994, section 2 (rate of VAT)",
+          "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/2"
+        },
+        {
           "@type": "CreativeWork",
           "name": "GOV.UK: VAT rates",
           "url": "https://www.gov.uk/vat-rates"
-        },
-        {
-          "@type": "Legislation",
-          "name": "legislation.gov.uk: Value Added Tax Act 1994, section 4",
-          "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/4"
         }
       ]
     },
@@ -380,7 +380,8 @@
             <p class="formula">Net = Gross &divide; (1 + rate &divide; 100)</p>
             <p>
               At the 20% standard rate the factor is 1.20. At the 5% reduced rate it is 1.05. At a
-              custom rate, such as the 17.5% that applied between 1991 and 2008, it is 1.175.
+              historical rate, such as the 17.5% that applied from 1991 to 2011 apart from the
+              2008&ndash;09 cut, it is 1.175.
             </p>
 
             <h2 id="fraction">Why the VAT fraction exists</h2>
@@ -402,14 +403,21 @@
 
             <h2 id="rounding">Rounding and line-level accuracy</h2>
             <p>
-              HMRC expects normal rounding to the nearest penny, not truncation. Calculate the VAT on
-              the net amount, round it, then add it to the net so the two always reconcile. On a gross
-              of &pound;10.00 at 20%, the VAT is &pound;1.67 and the net is &pound;8.33.
+              HMRC expects normal rounding to the nearest penny, not truncation, but the rule differs
+              by trader. Retailers must not round the VAT figure down, though they may round each
+              calculation up or down. Businesses issuing VAT invoices to other businesses may use the
+              Notice 700 paragraph 17.5 concession to round the total VAT down to a whole penny.
+            </p>
+            <p>
+              Calculate the VAT on the net amount, round it, then add it to the net so the two always
+              reconcile. On a gross of &pound;10.00 at 20%, the VAT is &pound;1.67 and the net is
+              &pound;8.33.
             </p>
             <p>
               On a mixed invoice you can calculate VAT per line or on the total for each rate. Both are
               used in practice, but stay consistent and keep a record of the method so a checker can
-              follow it.
+              follow it. The <a href="vat-rounding-and-mixed-invoices.html">rounding guide</a> works
+              through a five-line comparison.
             </p>
 
             <h2 id="specialist">When the simple formula is not enough</h2>
@@ -460,6 +468,7 @@
                 </tbody>
               </table>
             </div>
+
           </article>
 
           <aside class="min-w-0 space-y-4 lg:sticky lg:top-6 lg:self-start">
@@ -578,12 +587,12 @@
               <span class="text-slate-500">(HMRC notice)</span>
             </li>
             <li>
-              <a href="https://www.gov.uk/vat-rates" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">GOV.UK: VAT rates</a>
-              <span class="text-slate-500">(Guidance)</span>
+              <a href="https://www.legislation.gov.uk/ukpga/1994/23/section/2" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">legislation.gov.uk: Value Added Tax Act 1994, section 2 (rate of VAT)</a>
+              <span class="text-slate-500">(Legislation)</span>
             </li>
             <li>
-              <a href="https://www.legislation.gov.uk/ukpga/1994/23/section/4" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">legislation.gov.uk: Value Added Tax Act 1994, section 4</a>
-              <span class="text-slate-500">(Legislation)</span>
+              <a href="https://www.gov.uk/vat-rates" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">GOV.UK: VAT rates</a>
+              <span class="text-slate-500">(Guidance)</span>
             </li>
           </ul>
           <p class="mt-4 text-xs text-slate-500">Sources checked 13 November 2026. Not tax or legal advice.</p>
@@ -622,7 +631,6 @@
               Free UK VAT calculators and plain-English guides. Every calculation runs in your
               browser, with no accounts and no tracking.
             </p>
-            <p class="mt-4 text-xs text-slate-400">Last reviewed 10 November 2026</p>
           </div>
           <div>
             <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Site</h2>
