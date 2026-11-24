@@ -10,7 +10,7 @@
           maximumFractionDigits: 4,
         });
 
-        const DASH = "—";
+        const DASH = "-";
 
         function parseAmount(raw) {
           const cleaned = String(raw).replace(/[£,\s]/g, "");
